@@ -1,52 +1,53 @@
-<!DOCTYPE html>
 <html>
 
   <head>
     <style>
-        h1{
-        font-family: helvetica
-        }
-        body {
-            margin: 0px;
-        }
 
-        .inner {
-            width: 100px;
-            height: 100px;
-            display: inline-block;
-            background-color: black;
-            margin-top: 50px;
-            margin-left: 50px;
-        }
+      body {
+        margin: 0;
+      }
+      
+      #red {
+        background-color: red;
+      }
 
-        .row {
-            width: 350px;
-            height: 200px;
-            display: inline-block;
-            margin-left: -10px;
-        }
+      #blue {
+        background-color: blue;
+      }
 
-        #top {
-            background-color: red;
-        }
+      .bar {
+        width: 350px;
+        height: 200px;
+        display: inline-block;
+      }
 
-        #bottom {
-            background-color: blue;
-        }
+      .box {
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin-left: 50px;
+        margin-top: 50px;
+      }
+
     </style>
   </head>
 
   <body>
 
-    <div class="row" id="top" >
-        <div class="inner"></div>
-        <div class="inner"></div>
-    </div>
+    <div class="bar" id="red">
 
-    <div class="row" id="bottom">
-        <div class="inner"></div>
-        <div class="inner"></div>
-    </div>   
+      <div class="box"></div><!-- 
+   --><div class="box"></div>
+
+    </div><!-- removing inline space 
+
+ --><div class="bar" id="blue">
+       
+      <div class="box"></div><!-- 
+   --><div class="box"></div>
+
+    </div>
 
   </body>
 
